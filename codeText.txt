@@ -1,0 +1,117 @@
+int state = 0;
+switch (state)
+{
+	char ch = getChar();
+case 0:
+	switch (ch)
+	{
+	case +':
+		state = 1;
+		break;
+	case -':
+		state = 2;
+		break;
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 1:
+	switch (ch)
+	{
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 2:
+	switch (ch)
+	{
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 3:
+	switch (ch)
+	{
+	case .':
+		state = 4;
+		break;
+	case E':
+		state = 5;
+		break;
+	case d':
+		state = 3;
+		break;
+	case e':
+		state = 6;
+		break;
+	default:
+		state = -1;
+	}
+case 4:
+	switch (ch)
+	{
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 5:
+	switch (ch)
+	{
+	case +':
+		state = 7;
+		break;
+	case -':
+		state = 8;
+		break;
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 6:
+	switch (ch)
+	{
+	case +':
+		state = 7;
+		break;
+	case -':
+		state = 8;
+		break;
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 7:
+	switch (ch)
+	{
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+case 8:
+	switch (ch)
+	{
+	case d':
+		state = 3;
+		break;
+	default:
+		state = -1;
+	}
+}
+if (state == 3)
+	Accept();
+else
+	Back();

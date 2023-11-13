@@ -1,0 +1,10 @@
+Set of States in NFA,Corresponding State in DFA,Tag
+{0 },0,-
+{1 },1,
+{2 },2,
+{3 6 8 11 12 13 },3,+
+{4 },4,
+{5 },5,
+{7 },6,
+{9 },7,
+{10 },8,
